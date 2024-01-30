@@ -1,0 +1,103 @@
+/* Hobbies.css */
+
+.hobbies-container {
+  overflow-y: auto;
+  max-height: 90vh;
+  max-width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 40%;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.hobbies-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hobbies-flip-card {
+  width: 400px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 50px;
+  background-image: linear-gradient(#3a3a3a, #5a5a5a, #8d8d8d);
+  border-radius: 15px;
+}
+
+.hobbies-flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.hobbies-flip-card:hover .hobbies-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.hobbies-flip-card-front,
+.hobbies-flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.hobbies-flip-card-front {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(#1a1a1a, #333333, #4d4d4d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbies-flip-card-back {
+  color: white;
+  background-image: linear-gradient(#1a1a1a, #333333, #4d4d4d);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbies-paragraph {
+  margin: 15px 70px 15px 70px;
+  padding: 10px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.hobbies-txt {
+  padding: 30px 30px 30px 30px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .hobbies-flip-card {
+    width: 80%;
+    margin: 20px;
+  }
+
+  .hobbies-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

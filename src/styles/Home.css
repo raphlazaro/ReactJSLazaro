@@ -1,0 +1,96 @@
+@media (max-width: 720px) {
+  .home-raphael {
+    font-size: 1.5em;
+  }
+  
+  .home-reactjs-activity {
+    font-size: 1em;
+  }
+
+  .home-activity-description {
+    font-size: 0.9em;
+  }
+
+  .home-digital-transformation {
+    font-weight: bolder;
+    font-size: 50px;
+  }
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-moving-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #000000, #1f1f1f, #222222, #e0e0e0);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.home-content {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+}
+
+.home-line {
+  width: auto;
+  height: 2px; 
+  background-color: rgb(255, 255, 255); 
+  margin: 20px 10px 10px 20px;
+}
+
+.home-raphael {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.home-reactjs-activity {
+  font-size: 1.5em;
+}
+
+.home-activity-description {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 15px;
+}
+
+.home-carousel {
+  max-height: 750px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.home-txt-content{
+    text-align: center;
+    padding-top: 50px;
+}
+.home-digital-transformation {
+  font-weight: bolder;
+  font-size: 50px;
+}
