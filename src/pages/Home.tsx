@@ -8,6 +8,7 @@ const Home: React.FC = () => {
     <Layout>
       <div className="home-moving-background">
         <div className="home-content">
+          <div className="home-carousel-container">
           <Carousel className="home-carousel mb-4">
             <Carousel.Item>
               <img
@@ -38,6 +39,7 @@ const Home: React.FC = () => {
               />
             </Carousel.Item>
           </Carousel>
+          </div>
           <div className="home-txt-content">
           <h3 className="home-digital-transformation">DIGITAL TRANSFORMATION</h3>
           <div className="home-line"></div>
