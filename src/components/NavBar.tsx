@@ -15,13 +15,13 @@ const NavbarComponent = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="links">
             <Nav.Link href="/" className={currentPath === '/' ? 'navbar-active' : ''}>
-              Home
+             HOME
             </Nav.Link>
             <Nav.Link href="/hobbies" className={currentPath === '/hobbies' ? 'navbar-active' : ''}>
-              Hobbies
+              HOBBIES
             </Nav.Link>
             <Nav.Link href="/calc" className={currentPath === '/calc' ? 'navbar-active' : ''}>
-              Calculator
+              CALCULATOR
             </Nav.Link>
             <Nav.Link href="/json" className={currentPath === '/json' ? 'navbar-active' : ''}>
               JSON

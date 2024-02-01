@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           <div className="home-line"></div>
           <h1 className="home-raphael">Raphael Daniel Lazaro</h1>
           <div className="home-line"></div>
-          <h2 className="home-reactjs-activity">ReactJS Activity #1</h2>
+          <h2 className="home-reactjs-activity">ReactJS | TypeScript </h2>
           <h3 className="home-activity-description">This is a simple activity which consists of a homepage, calculator, hobbies, and a JSON file.</h3>
           </div>
         </div>
