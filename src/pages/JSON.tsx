@@ -2,8 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import axios from 'axios';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import '../styles/JSON.css'; // Import the CSS file
+import { Container, Row, Col } from 'react-bootstrap';
+import JsonCard from '../components/JsonCard';
+import '../styles/JSON.css';
 
 interface User {
   id: number;
@@ -41,20 +42,7 @@ export default function JSON() {
         <Row className="json-row">
           {users.map((user) => (
             <Col key={user.id} md={4} className="json-col">
-              <Card className="json-card">
-                <Card.Body>
-                  <Card.Title>{user.name}</Card.Title>
-                  <Card.Subtitle className="json-mb-2">ID: {user.id}</Card.Subtitle>
-                  <Card.Text>
-                    <strong>Username:</strong> {user.username}<br />
-                    <strong>Email:</strong> {user.email}<br />
-                    <strong>Street:</strong> {user.address.street}<br />
-                    <strong>Suite:</strong> {user.address.suite}<br />
-                    <strong>City:</strong> {user.address.city}<br />
-                    <strong>Zip Code:</strong> {user.address.zipcode}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <JsonCard user={user} />
             </Col>
           ))}
         </Row>

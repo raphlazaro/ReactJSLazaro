@@ -1,44 +1,24 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { Carousel } from 'react-bootstrap';
+import Carousel from '../components/CarouselHome';
 import '../styles/Home.css';
 
+
+
 const Home: React.FC = () => {
+  const carouselImages = [
+    "../images/one.png",
+    "../images/two.png",
+    "../images/three.png",
+    "../images/four.png",
+  ];
+
   return (
     <Layout>
       <div className="home-moving-background">
         <div className="home-content">
           <div className="home-carousel-container">
-          <Carousel className="home-carousel mb-4">
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="../images/one.png"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="../images/two.png" 
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="../images/three.png"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="../images/four.png"
-                alt="Fourth slide"
-              />
-            </Carousel.Item>
-          </Carousel>
+            <Carousel images={carouselImages} />
           </div>
           <div className="home-txt-content">
           <h3 className="home-digital-transformation">DIGITAL TRANSFORMATION</h3>

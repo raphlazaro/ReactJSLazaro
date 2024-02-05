@@ -45,9 +45,9 @@ input {
   font-weight: bolder;
   border-radius: 75px;
   flex: 1;
-  padding: 15px;
+  padding: 10px;
   margin: 7px;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -60,7 +60,7 @@ input {
 
 .form-control{
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.5em;
   background-color: beige;
 }
 
