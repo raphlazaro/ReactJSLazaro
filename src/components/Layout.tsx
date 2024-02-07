@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import NavBar from './NavBar'; // Update the import path based on your project structure
+import NavBar from './NavBar'; 
 import '../styles/Layout.css';
 
 interface LayoutProps {
