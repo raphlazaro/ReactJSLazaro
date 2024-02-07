@@ -22,7 +22,7 @@
   max-height: auto;
   max-width: auto;
   margin: 0 auto;
-  background: linear-gradient(45deg, #000000, #1f1f1f, #222222, #e0e0e0);
+  background: linear-gradient(90deg, #030305, #110f15, #3e3d41, #595860);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
 }
@@ -62,8 +62,9 @@
 }
 
 .home-carousel {
+  padding-top: 1.5em;
   max-height: 750px;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -88,6 +89,7 @@
     padding-bottom: 100px;
 }
 .home-digital-transformation {
+  padding: auto;
   font-weight: bolder;
-  font-size: 50px;
+  font-size: 3em;
 }

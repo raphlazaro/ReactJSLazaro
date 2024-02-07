@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import axios from 'axios';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import JsonCard from '../components/JsonCard';
 import '../styles/JSON.css';
 
@@ -37,8 +37,8 @@ export default function JSON() {
 
   return (
     <Layout>
-      <Container className="json-container">
-        <h3 className="h3-json">USERS LIST</h3>
+      <div className="json-container">
+        <h3 className="json-desc">USERS LIST</h3>
         <Row className="json-row">
           {users.map((user) => (
             <Col key={user.id} md={4} className="json-col">
@@ -46,7 +46,7 @@ export default function JSON() {
             </Col>
           ))}
         </Row>
-      </Container>
+        </div>
     </Layout>
   );
 }

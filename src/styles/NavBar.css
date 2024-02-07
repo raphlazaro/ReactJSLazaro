@@ -1,21 +1,15 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
   height: 100%;
 }
 
 .navbar-bg-body-tertiary {
-  color: rgb(255, 255, 255);
-  background-color: #0c0c0c;
-}
-
-.navbar-brand {
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  font-weight: bold;
+  background-color: #101010;
 }
 
 .navbar-container .links .nav-link {
-  padding: 15px;
+  padding: 20px;
   color: #ffffff;
 }
 
@@ -24,7 +18,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  background-color: #c9c9c9;
+  background-color: #808080;
 }
 
 .navbar-container {

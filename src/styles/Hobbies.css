@@ -1,4 +1,6 @@
 .hobbies-container {
+  color: white;
+  background-color: rgb(23, 23, 23);
   overflow-y: auto;
   max-height: 90vh;
   max-width: auto;
@@ -22,6 +24,10 @@
   height: auto;
 }
 
+.card-hobbies-title{
+  font-size: 2.5em;
+}
+
 .hobbies-card-container {
   display: flex;
   justify-content: space-around;
@@ -33,7 +39,7 @@
   height: 200px;
   perspective: 1000px;
   margin: 50px;
-  background-image: linear-gradient(#3a3a3a, #5a5a5a, #8d8d8d);
+  background-image: linear-gradient(#272727, #000000, #1a1a1a);
   border-radius: 15px;
 }
 
@@ -85,7 +91,7 @@
 .hobbies-txt {
   padding: 30px 30px 30px 30px;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 4em;
 }
 
 @media (max-width: 768px) {

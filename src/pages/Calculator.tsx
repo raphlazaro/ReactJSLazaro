@@ -1,7 +1,7 @@
 // Calculator.tsx
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
-import { Button, InputGroup, FormControl } from 'react-bootstrap';
+import { Button, InputGroup, FormControl, Container } from 'react-bootstrap';
 import '../styles/Calculator.css';
 
 export default function Calculator() {
@@ -28,6 +28,7 @@ export default function Calculator() {
 
   return (
     <Layout>
+      <div className="calculator-base-container">
       <div className="calculator-txt">
         <h3 className="calculator-desc"> CALCULATOR </h3>
       </div>
@@ -78,6 +79,7 @@ export default function Calculator() {
             </Button>
           </div>
         </div>
+      </div>
       </div>
     </Layout>
   );

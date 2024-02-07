@@ -12,7 +12,7 @@ const CardHobbies: React.FC<CardHobbiesProps> = ({ title, content }) => {
       <div className="hobbies-flip-card-inner">
         <div className="hobbies-flip-card-front">
           <Card.Body>
-            <Card.Title>{title}</Card.Title>
+            <Card.Title className="card-hobbies-title">{title}</Card.Title>
           </Card.Body>
         </div>
         <div className="hobbies-flip-card-back">
