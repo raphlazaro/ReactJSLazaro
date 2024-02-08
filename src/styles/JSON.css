@@ -4,11 +4,15 @@
   max-height: 90vh;
   max-width: auto;
 }
+.json-card-body{
+  text-align: center;
+}
 
 .json-card-title{
   font-size: 2.5rem !important;
 }
 .json-row {
+  margin: 50px;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;

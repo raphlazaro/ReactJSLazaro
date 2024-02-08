@@ -19,7 +19,7 @@ interface UserCardProps {
 const UserCard: React.FC<UserCardProps> = ({ user }) => {
   return (
     <Card className="json-card">
-      <Card.Body>
+      <Card.Body className="json-card-body">
         <Card.Title className="json-card-title">{user.name}</Card.Title>
         <Card.Subtitle className="json-mb-2">ID: {user.id}</Card.Subtitle>
         <Card.Text className="json-contents">
